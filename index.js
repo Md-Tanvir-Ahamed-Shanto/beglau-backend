@@ -7,7 +7,7 @@ require("dotenv").config();
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 // -----------------
 // Middleware
@@ -757,11 +757,11 @@ app.patch("/add_views/:id", async (req, res) => {
 // -----------------
 // Sample route
 app.get("/", (req, res) => {
-  res.send("✅ The bd server is running");
+  res.send("✅ The au server is running");
 });
 
 // -----------------
 // Start server
 app.listen(port, () => {
-  console.log(`🚀the bd Server is running on port ${port}`);
+  console.log(`🚀the au Server is running on port ${port}`);
 });
